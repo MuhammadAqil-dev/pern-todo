@@ -8,6 +8,11 @@ app.use(cors());
 app.use(express.json()); //req.body
 
 //ROUTES//
+app.get("/", async (req, res) => {
+  console.log("todos")
+  res.status(200).send("working")
+
+});
 
 //create a todo
 
